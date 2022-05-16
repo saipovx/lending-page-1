@@ -1,0 +1,16 @@
+// Global SCSS-files imports
+@import './vars';
+@import './reset';
+@import './global';
+
+// Sections or Pages SCSS-files imports
+@import './header';
+@import './story';
+@import './feat';
+@import './pricing';
+@import './learn';
+@import './reviews';
+@import './footer';
+
+// Libs
+// @import './libs/swiper';

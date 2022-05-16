@@ -1,0 +1,160 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 95%;
+    color: #FFFFFF;
+
+    @media (max-width: $breakpoint1200) {
+        font-size: 60px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        font-size: 50px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        font-size: 40px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        font-size: 30px;
+        max-width: 100%;
+    }
+}
+
+.section-desc{
+    font-weight: 500;
+        font-size: 22px;
+        line-height: 145%; 
+        color: #AAC0E0;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 18px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 16px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 14px;
+            max-width: 100%;
+        }
+}
+
+// .section-togl
+
+.section-togl {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 110%;   
+    letter-spacing: -0.03em;
+    color: #001731;
+    
+    @media (max-width: $breakpoint992) {
+    font-size: 35px;
+    margin-top: 15px;
+ }
+
+ @media (max-width: $breakpoint480) {
+    font-size: 20px;
+ }
+ 
+}
+
+.section-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 23, 49, 0.55);
+    margin-top: 5px;
+    max-width: 100%;
+    width: 100%;
+
+    @media (max-width: $breakpoint992) {
+        font-size: 16px;
+     }
+
+     @media (max-width: $breakpoint480) {
+        font-size: 14px;
+        line-height: 140%;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+     }
+}
+
+.fixed__nav{
+    transition: all .1s;
+    background: #001731;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 111;
+    opacity: 0.9;
+    animation-name: slidein;
+    animation-duration: 3s;
+
+    @media (max-width: $breakpoint768) {
+        padding: 1px 0px;
+
+    }
+}
+
+@keyframes slidein {
+    from {
+      transform: translateY(-100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+

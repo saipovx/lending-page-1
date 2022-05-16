@@ -1,0 +1,201 @@
+.section {
+
+    // .section-footer
+
+    &-footer {
+        background: #031E3E;
+        padding: 58px 0px 26px 0px;
+
+        @media (max-width: $breakpoint992) {
+            padding: 30px 0px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    @media (max-width: $breakpoint1200) {
+        gap: 50px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    @media (max-width: $breakpoint480) {
+        gap: 30px;
+    }
+
+    // .footer-item
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $breakpoint992) {
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint480) {
+            flex: 0 1 30%;
+        }
+
+
+        &-title{
+            & a{
+                font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+            }
+            
+        }
+
+        &-li{
+            margin-top: 25px;
+            & a{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: rgba(138, 138, 138, 0.99);
+                transition: all ease .3s;
+
+                &:hover{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    // .footer-item2
+
+    &-item2 {
+        padding-left: 180px;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @media (max-width: $breakpoint1200) {
+            padding-left: 0px;
+        }
+
+        &-title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px; 
+            color: #FFFFFF;
+        }
+
+        &-subtitle{
+            max-width: 388px;
+            margin-top: 24px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;   
+            color: rgba(138, 138, 138, 0.99);
+            opacity: 0.8;
+
+            @media (max-width: $breakpoint480) {
+                font-size: 14px;
+                margin-top: 16px;
+            }
+        }
+
+        &-form{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            @media (max-width: $breakpoint480) {
+                flex-direction: column;
+            }
+
+            &-input{
+                width: 270px;
+                height: 37px;
+                background: #FFFFFF;
+                border-radius: 8px;
+                color: #010101;
+                padding: 12px;
+                outline: none;
+                border: none;
+                box-shadow: 10px 4px 50px rgba(57, 139, 255, 0.3);
+
+                @media (max-width: $breakpoint480) {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &-btn{
+                padding: 12px 8px ;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.01em;
+                color: #FFFFFF;
+                background: #398BFF;
+                border-radius: 8px;
+                transition: all ease .4s;
+
+                &:hover{
+                    background: #215bac;
+                }
+                @media (max-width: $breakpoint480) {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // .footer-footer
+
+    &-footer {
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $breakpoint480) {
+            flex-direction: column;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        &-item{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;  
+            color: rgba(138, 138, 138, 0.99);
+            opacity: 0.7;
+
+            @media (max-width: $breakpoint480) {
+                margin-top: 20px;
+            }
+
+            &-ul{
+                max-width: 300px;
+                display: flex;
+                align-items: center;
+                gap: 28px;
+
+                &-li {
+                    & a{
+                        cursor: pointer;
+
+                    }
+                }
+            }
+        }
+    }
+}

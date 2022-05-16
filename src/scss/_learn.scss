@@ -1,0 +1,112 @@
+.section {
+
+    // .section-learn
+
+    &-learn {
+        padding-top: 75px;
+        background: #031E3E;
+
+        @media (max-width: $breakpoint992) {
+            padding-top: 50px;
+         }
+
+         @media (max-width: $breakpoint768) {
+            padding-top: 30px;
+         }
+    }
+}
+
+.learn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    @media (max-width: $breakpoint1200) {
+        gap: 40px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+     }
+
+    // .learn-item
+
+    &-item {
+        &-img{
+            max-width: 600px;
+
+            @media (max-width: $breakpoint1200) {
+               max-width: 480px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+             }
+
+        }
+
+        &-title{
+            margin: 25px 0px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 110%; 
+            letter-spacing: -0.03em;
+            color: #FFFFFF;
+
+            @media (max-width: $breakpoint768) {
+                margin: 14px 0px;
+                font-size: 27px;
+             }
+        }
+
+        &-subtitle{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 145%;
+            color: #AAC0E0;
+             
+            @media (max-width: $breakpoint768) {
+                font-size: 16px;
+             }
+        }
+
+        &-btn{
+            display: inline-block;
+            padding: 15px 22px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            background:#398BFF;
+            border-radius: 4px;
+            margin-top: 30px;
+            transition: all ease .3s;
+
+            &:hover{
+           background: #1c4b8d;
+            }
+
+            @media (max-width: $breakpoint768) {
+                margin-top: 20px;
+                padding: 10px 20px;
+             }
+
+             @media (max-width: $breakpoint480) {
+              max-width: 100%;
+              width: 100%;
+              text-align: center;
+             }
+            
+        }
+    }
+}
+
